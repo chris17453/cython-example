@@ -41,3 +41,6 @@ Version:1.0.4
 Hello, from cython.
 
 ```
+
+### compiled and tested on
+- Fedora 29 x64 with python 2
