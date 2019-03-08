@@ -2,11 +2,13 @@
 
 A cython example project
 
+
 ## Prerequizites
 
 - you need a compiler .. gcc
 - you need cython to build
 - you need the python source
+
 
 ### Fedora/CentOS PreReq install
 ```
@@ -21,10 +23,9 @@ dnf install python2-devel
 
 make clean   # to delete build files .c;.so.gz
 make build   # to build the dist file, it also bumps the patch version +1
-make install # to install it in your usser did with pip
-make all     # for all of it
+make install # to install it in your user dir with pip
+make all     # do all the things
 ```
-
 
 
 ## example output 
