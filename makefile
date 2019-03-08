@@ -13,6 +13,7 @@ clean:
 
 build:
 	@echo "Building"
+	@./bump.sh
 	@python setup.py build_ext  sdist  
 
 
