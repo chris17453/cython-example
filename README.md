@@ -2,6 +2,11 @@
 
 A cython example project
 
+- ".pyx" extensions are used to mark python files as cython. It helps with setup.
+- When you build, cython will create ".c" source files for each cythonized extensions
+- These files are included into your dist package, not the ".pyx" files
+- When installing the package, the ".c" files are compiled into a ".so"
+
 
 ## Prerequizites
 
