@@ -4,14 +4,14 @@ from distutils.core import setup, Command
 from distutils.extension import Extension
 
 
-#incase you have the files in a strange location
+# incase you have the files in a strange location
 prefix=""
 # you can write a function for this, I just do it by hand
 # cython needs to know what files and paths to compile
-# these need to be explicitly defined so that so objects can load properly
+# these need to be explicitly defined so that ".so" objects can load properly
 # you can add extra parameters for search dirs if its a complex file with includes
 extensions = [
-    Extension("chello.hello",                        [prefix+"chello/hello.pyx"], ),
+    Extension("chello.hello",        [prefix+"chello/hello.pyx"], ),
 ]
 try:
     from Cython.Build import cythonize
@@ -34,7 +34,7 @@ setup(
     long_description=open('README.md').read(),
     long_description_content_type="text/markdown",
     author='Charles Watkins',
-    author_email='charles@titandws.com',
+    author_email='chris17453@gmail.com',
     description='A test cython example',
     ext_modules=extensions,
     classifiers=[
@@ -50,6 +50,4 @@ setup(
         """,
     compiler_directives={"language_level": "2"},
     
-
- 
 )
